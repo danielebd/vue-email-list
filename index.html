@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="email in listEmail">{{email}}</li>
+            <li v-for="email in listEmail" v-show="listEmail.length === 10">{{email}}</li>
         </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
